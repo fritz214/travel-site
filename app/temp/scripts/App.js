@@ -47,6 +47,7 @@
 	var $ = __webpack_require__(1);
 	var Person = __webpack_require__(2);
 
+	alert("Testing gulp watch!");
 
 	var john = new Person("John Doe", "blue");
 	john.greet();
