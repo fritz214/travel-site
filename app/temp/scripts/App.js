@@ -71,8 +71,8 @@
 	var mobileMenu = new _MobileMenu2.default();
 	new _RevealOnScroll2.default((0, _jquery2.default)(".feature-item"), "85%");
 	new _RevealOnScroll2.default((0, _jquery2.default)(".testimonial"), "60%");
-	var stickyHeader = new _StickyHeader2.default();
 	var modal = new _Modal2.default();
+	var stickyHeader = new _StickyHeader2.default();
 
 /***/ },
 /* 1 */
@@ -11213,12 +11213,12 @@
 			this.headerLinks = (0, _jquery2.default)(".primary-nav a");
 			this.createPageSectionWaypoints();
 			this.addSmoothScrolling();
-			this.refreshWaypoints();
+			this.refreshWaypoint();
 		}
 
 		_createClass(StickyHeader, [{
-			key: 'refreshWaypoints',
-			value: function refreshWaypoints() {
+			key: 'refreshWaypoint',
+			value: function refreshWaypoint() {
 				this.lazyImages.load(function () {
 					Waypoint.refreshAll();
 				});
